@@ -123,11 +123,15 @@ nav .left{
 }
 
 /* ICON ANIMATION */
+
 .menu-toggle i{
-  transition:0.3s;
+  font-size:28px;
+  color:white;
+  cursor:pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .menu-toggle i:hover{
   color:#00ffff;
-  transform:rotate(90deg);
-                               }
+  transform:rotate(180deg);
+}
