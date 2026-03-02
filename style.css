@@ -135,3 +135,7 @@ nav .left{
   color:#00ffff;
   transform:rotate(180deg);
 }
+
+.rotate {
+  transform: rotate(180deg);
+}
