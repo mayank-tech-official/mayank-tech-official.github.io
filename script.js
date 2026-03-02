@@ -1,17 +1,16 @@
-const toggle = document.getElementById("menu-toggle");
-const navLinks = document.getElementById("nav-links");
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+const icon = document.querySelector(".menu-toggle i");
 
-toggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-    toggle.classList.toggle("active");
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+  icon.classList.toggle("rotate");
+});
 
-    const icon = toggle.querySelector("i");
-
-    if (icon.classList.contains("fa-bars")) {
-        icon.classList.remove("fa-bars");
-        icon.classList.add("fa-xmark");
-    } else {
-        icon.classList.remove("fa-xmark");
-        icon.classList.add("fa-bars");
-    }
+// Click outside to close menu
+document.addEventListener("click", (e) => {
+  if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+    navLinks.classList.remove("active");
+    icon.classList.remove("rotate");
+  }
 });
