@@ -1,16 +1,21 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
-const icon = document.querySelector(".menu-toggle i");
+document.addEventListener("DOMContentLoaded", function () {
 
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-  icon.classList.toggle("rotate");
-});
+  const menuToggle = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
+  const icon = menuToggle.querySelector("i");
 
-// Click outside to close menu
-document.addEventListener("click", (e) => {
-  if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
-    navLinks.classList.remove("active");
-    icon.classList.remove("rotate");
-  }
+  menuToggle.addEventListener("click", function (e) {
+    e.stopPropagation();
+
+    navLinks.classList.toggle("active");
+    icon.classList.toggle("rotate");
+  });
+
+  document.addEventListener("click", function (e) {
+    if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+      navLinks.classList.remove("active");
+      icon.classList.remove("rotate");
+    }
+  });
+
 });
