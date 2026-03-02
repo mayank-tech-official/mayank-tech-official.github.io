@@ -6,6 +6,12 @@ toggle.addEventListener("click", () => {
     toggle.classList.toggle("active");
 
     const icon = toggle.querySelector("i");
-    icon.classList.toggle("fa-bars");
-    icon.classList.toggle("fa-xmark");
+
+    if (icon.classList.contains("fa-bars")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
+    } else {
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+    }
 });
