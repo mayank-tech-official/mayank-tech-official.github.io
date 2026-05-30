@@ -1,0 +1,90 @@
+header {
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.15);
+    border-bottom: 1.5px solid grey;
+    backdrop-filter: blur(12px);
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.left h2 {
+    font-size: 1.6rem;
+}
+
+.right ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.right ul li {
+    list-style: none;
+}
+
+.right ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.ham-menu {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.open {
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #222;
+    z-index: 1000;
+    transition: right 0.4s ease;
+    padding: 1rem;
+}
+
+.close {
+    display: flex;
+    padding: 13px 0 0 13px;
+    justify-content: flex-end;
+}
+
+.close i {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}

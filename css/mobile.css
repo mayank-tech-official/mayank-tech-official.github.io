@@ -1,0 +1,31 @@
+@media screen and (max-width: 768px) {
+
+    .right {
+        display: none;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .bg-inner-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .bg-inner-content p {
+        font-size: 0.9rem;
+        padding: 3rem 2rem;
+    }
+
+    .bg {
+        height: 70vh;
+    }
+
+    .black-box {
+        height: 70vh;
+    }
+
+    .copy span:first-child {
+        margin-top: 10px;
+    }
+}

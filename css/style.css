@@ -1,0 +1,21 @@
+@import url("navbar.css");
+@import url("hero.css");
+@import url("footer.css");
+@import url("animations.css");
+@import url("mobile.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "B612", sans-serif;
+    font-weight: 800;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #081018;
+    color: white;
+    overflow-x: hidden;
+}
