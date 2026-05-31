@@ -29,8 +29,11 @@
         padding-top: 15rem;
         padding-bottom: 15rem;
     }
-
-    .footer .licence {
-        flex-direction: column;
-    }
 }
+
+@media screen and (max-width: 450px) {
+        .footer .licence {
+		flex-direction: column;
+        }
+}
+
