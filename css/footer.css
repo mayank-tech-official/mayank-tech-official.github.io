@@ -1,67 +1,76 @@
+:root {
+    --bg: #0d1117;
+    --bor: #1f2937;
+    --clr: #ffffff;
+    --clrp: #9ca3af;
+    --sbtna: #111827;
+    --shover: #00ffd5;
+}
+
 .footer {
     width: 100%;
-    background: #0d1117;
-    border-top: 1px solid #1f2937;
-    padding: 45px 20px;
-    text-align: center;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--bg);
+    gap: 2.5rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 
 .footer h2 {
-    color: white;
-    font-size: clamp(28px, 5vw, 40px);
-    margin-bottom: 12px;
+    font-size: 1.8rem;
 }
 
 .footer p {
-    color: #9ca3af;
-    max-width: 600px;
-    margin: auto;
-    line-height: 1.7;
-    font-size: clamp(14px, 2vw, 16px);
-    padding-top: 20px;
+    padding: 0 1.8rem;
+    text-align: center;
+    color: var(--clrp);
 }
 
 .socials {
-    margin-top: 30px;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
+    gap: 1rem;
 }
 
 .socials a {
+    box-shadow: 0 0 3px whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--clr);
+    font-size: 17px;
+    background: var(--sbtna);
     width: 50px;
     height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 50%;
-    background: #111827;
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-    border: 1px solid #1f2937;
-    transition: 0.3s ease;
+    cursor: pointer;
+    transition: 0.6s;
 }
 
 .socials a:hover {
-    transform: translateY(-5px);
-    color: #00ffd5;
-    box-shadow: 0 0 15px #00ffd5;
+    box-shadow: 0 0 10px var(--shover);
+    color: var(--shover);
+    transform: scale(1.1);
 }
 
-.copy {
+.licence {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 6px;
-    flex-wrap: nowrap;
-    padding: 10px;
+    text-align: center;
+    width: 100%;
+    height: 5vh;
+    gap: 10px
 }
 
-.copy span:first-child {
-    font-size: 1.8rem;
-    color: #00ffd5;
-    font-weight: bold;
-    margin-top: 12px;
+.footer .licence .cp {
+    margin-top: 2.5px;
+}
+
+.footer .licence .lic {
+    color: var(--clrp);
 }

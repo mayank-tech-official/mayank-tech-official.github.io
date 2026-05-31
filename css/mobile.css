@@ -25,7 +25,12 @@
         height: 70vh;
     }
 
-    .copy span:first-child {
-        margin-top: 10px;
+    .footer {
+        padding-top: 15rem;
+        padding-bottom: 15rem;
+    }
+
+    .footer .licence {
+        flex-direction: column;
     }
 }
